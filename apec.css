@@ -1069,7 +1069,69 @@ a {
 
 .w3-animate-top {
     position: relative;
-    animation: animatetop 0.4s
+    animation: animatetop 0.9s
+     
+      color:#313131;
+      -webkit-animation:colorchange 20s infinite alternate;
+      
+      
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #F99A00;
+      }
+      
+      20% {
+        
+        color: #9BF900;
+      }
+      
+      30% {
+        
+        color: #00F948;
+      }
+      
+      40% {
+        
+        color: #00F9B1;
+      }
+      
+      50% {
+        
+        color: #00EAF9;
+      }
+      
+      60% {
+        
+        color: #008CF9;
+      }
+      
+      70% {
+        
+        color: #0004F9;
+      }
+      80% {
+     
+        color: #5700F9;
+      }
+      
+      90% {
+     
+        color: #B900F9;
+      }
+      
+      100% {
+        
+        color: orange;
+      }
+    }
 }
 
 @keyframes animatetop {
