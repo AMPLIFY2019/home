@@ -1,135 +1,511 @@
 <!DOCTYPE html>
-<html>
-<title>APEC TAYTAY</title>
-<meta charset="UTF-8">
+<html lang="en">
+<head>
+<title>Amplify 2019</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="logos.png" sizes="16x16 32x32" type="image/png">
-<link rel="stylesheet" href="apec.css">
-<link href="https://fonts.googleapis.com/css?family=Anton|Noticia+Text&display=swap" rel="stylesheet">
-<style>
-body,h1 {font-family: 'Anton', sans-serif;
-font-family: 'Noticia Text', serif;}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('bg.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-.alert {
-  padding: 20px;
-  background-color: #000000;
-  color: orange;
-}
-
-.closebtn {
-  margin-left: 15px;
-  color: yellow;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.closebtn:hover {
-  color: red;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="icon" href="images/logos.png" sizes="16x16 32x32" type="image/pn3g">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font.css">
+<link rel="stylesheet" type="text/css" href="assets/css/li-scroller.css">
+<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<body>
-<div class="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-  <strong>Launch Date Postponed</strong> The new launch date will be on November 4, 2019.
+<body class="dark">           
+<div id="preloader">
+  <div id="status">&nbsp;</div>
 </div>
-</style>
-<style>
-  .text {
-  background-color: orange;
-  color: white;
-  font-size: 10vw; 
-  font-weight: bold;
-  margin: 0 auto;
-  padding: 10px;
-  width: 100%;
-  line-height: 100%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: multiply;
-}
-</style>
-
-<body>  
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    <style>.glow {
-  font-size: 30px;
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1b03a3, 0 0 40px #1b03a3, 0 0 50px #1b03a3, 0 0 60px #1b03a3, 0 0 70px #1b03a3;
-  }
-  
-  to {
-    text-shadow: 0 0 2px #fff, 0 0 3px #FFBF00, 0 0 4px #FFBF00, 0 0 5px #FFBF00, 0 0 6px #FFBF00, 0 0 7px #FFBF00, 0 0 8px #FFBF00;
-  }
-}
-</style>
-</head>
-<body>
-
-<h1 class="glow">A P E C</h1></style>
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top" class="CS">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-<p id="demo" class="w3-large w3-center"></p>
-
+<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+<div class="container">
+  <header id="header">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header_top">
+          <div class="header_top_left">
+            <ul class="top_nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="header_top_right">
+            <p id="time"></p>
 <script>
-var countDownDate = new Date("nov 4, 2019 13:00:00").getTime();
-
-
-var x = setInterval(function() {
-
-  
-  var now = new Date().getTime();
-
-  var distance = countDownDate - now;
-
-  
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "launching";
-  }
-}, 1000);
+document.getElementById("time").innerHTML = Date();
 </script>
-
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    AMPLIFY <a>2019</a>
-  </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header_bottom">
+          <div class="logo_area"><a href="index.html" class="logo"><img src="images/logo.png" alt=""></a></div>
+          <div class="add_banner"><a href="#"><img src="images/addbanner_728x90_V1.jpg" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="navArea">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav main_nav">
+          <li class="active"><a href="index.html"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
+          <li><a href="#">Entertainments</a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">News</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">August</a></li>
+              <li><a href="#">september</a></li>
+              <li><a href="#">october</a></li>
+              <li><a href="#">november</a></li>
+              <li><a href="#">december</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Featured</a></li>
+          <li><a href="pages/tables.html">Categories</a></li>
+          <li><a href="pages/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <section id="newsSection">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="latest_newsarea"> <span>Featured Articles</span>
+          <ul id="ticker01" class="news_sticker">
+            <li><a href="#">APEC Schools- Taytay Strikes for Buwan ng Wika 2019
+</a></li>
+            <li><a href="pages/Earthquake.html">APEC-Taytay practices Earthquake Drill</a></li>
+            <li><a href="#">Lakan and Lakambini Triumph Happens for a Reason</a></li>
+            <li><a href="#">CULTURAL BEAUTY...WITH A HEART</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+          <div class="social_area">
+            <ul class="social_nav">
+              <li class="facebook"><a href="https://www.facebook.com/groups/1484681174949801/"></a></li>
+              <li class="twitter"><a href="https://twitter.com/APECSchools"></a></li>
+              <li class="youtube"><a href="https://www.youtube.com/channel/UCQEVUyNzUrRM_cvI-tUNPKw"></a></li>
+              <li class="mail"><a href="https://mail.google.com/mail/u/1/#inbox"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sliderSection">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="slick_slider">
+          <div class="single_iteam"> <a href="pages/earthquake.html"> <img src="images/slider_img4.png" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="pages/Earthquake.html">APEC-Taytay practices Earthquake Drill</a></h2>
+              <p>APEC Schools- Taytay practiced earthquake and fire drill, August 2019 for both AM and PM classes. The students did "duck, cover, and hold". The objective of the drill...</p>
+            </div>
+          </div>
+          <div class="single_iteam"> <a href="pages/BuwanNgWika2019.html"> <img src="images/slider_img2.jpg" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="pages/BuwanNgWika2019.html">APEC Schools- Taytay Strikes for Buwan ng Wika 2019</a></h2>
+              <p>As recognition to our national language, APEC Schools- Taytay celebrated the Buwan ng Wika with the theme  “Wikang Katutubo: Tungo sa Isang Bansang Filipino” tha....</p>
+            </div>
+          </div>
+          <div class="single_iteam"> <a href="unreleased pages/index.html"> <img src="images/slider_img3.jpg" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="unreleased pages/index.html">Lakan and Lakambini Triumph Happens for a Reason</a></h2>
+              <p>
+                     APEC Students witnessed the success of each section, most especially the winners of Buwan ng Wika for the Month of August which highlighted the contestants. This month celebrates the Buwan ng Wika in the APEC Schools - Taytay that sho...</p>
+            </div>
+          </div>
+          <div class="single_iteam"> <a href="unreleased pages/index.html"> <img src="images/slider_img1.png" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="unreleased pages/index.html"></a>CULTURAL BEAUTY...WITH A HEART</h2>
+              <p>Everyone has been very busy as the day of  “Buwan ng Wika” has finally come as well as the students preparing their candidates for “Lakan and Lakambini”. As the event starts, glamorous and creative costumes floods over the stage. Eac...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="latest_post">
+          <h2><span>Latest post</span></h2>
+          <div class="latest_post_container">
+            <div id="prev-button"><i class="fa fa-chevron-up"></i></div>
+            <ul class="latest_postnav">
+              <li>
+                <div class="media"> <a href="pages/earthquake.html" class="media-left"> <img alt="" src="images/post_img1.png"> </a>
+                  <div class="media-body"> <a href="pages/Earthquake.html" class="catg_title"> APEC-Taytay practices Earthquake Drill </a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                  <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> APEC Schools- Taytay Strikes for Buwan ng Wika 2019</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img3.jpg"> </a>
+                  <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> Lakan and Lakambini Triumph Happens for a Reason</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img4.png"> </a>
+                  <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> CULTURAL BEAUTY...WITH A HEART</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img5.png"> </a>
+                  <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> APEC Legend?</a> </div>
+                </div>
+              </li>
+            </ul>
+            <div id="next-button"><i class="fa  fa-chevron-down"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contentSection">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="left_content">
+          <div class="single_post_content">
+            <h2><span>HEADLINE</span></h2>
+            <div class="single_post_content_left">
+              <ul class="business_catgnav  wow fadeInDown">
+                <li>
+                  <figure class="bsbig_fig"> <a href="unreleased pages/index.html" class="featured_img"> <img alt="" src="images/featured_img1.png"> <span class="overlay"></span> </a>
+                    <figcaption> <a href="unreleased pages/index.html">APEC Schools- Taytay Strikes for Buwan ng Wika 2019</a> </figcaption>
+                    <p>As recognition to our national language, APEC Schools- Taytay celebrated the Buwan ng Wika with the theme  “Wikang Katutubo: Tungo sa Isang Bansang Filipino” tha...</p>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <div class="single_post_content_right">
+              <ul class="spost_nav">
+                <li>
+                  <div class="media wow fadeInDown"> <a href="pages/earthquake.html" class="media-left"> <img alt="" src="images/post_img1.png"> </a>
+                    <div class="media-body"> <a href="pages/earthquake.html" class="catg_title"> APEC-Taytay practices Earthquake Drill</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                    <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> APEC Schools- Taytay Strikes for Buwan ng Wika 2019</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img3.jpg"> </a>
+                    <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> Lakan and Lakambini Triumph Happens for a Reason</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img4.png"> </a>
+                    <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> CULTURAL BEAUTY...WITH A HEART</a> </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="fashion_technology_area">
+            <div class="fashion">
+              <div class="single_post_content">
+                <h2><span>Featured Articles</span></h2>
+                <ul class="business_catgnav wow fadeInDown">
+                  <li>
+                    <figure class="bsbig_fig"> <a href="pages/earthquake.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"> <span class="overlay"></span> </a>
+                      <figcaption> <a href="pages/earthquake.html">APEC-Taytay practices Earthquake Drill</a> </figcaption>
+                      <p>APEC Schools- Taytay practiced earthquake and fire drill, August 2019 for both AM and PM classes. The students did "duck, cover, and hold". The objective of the drill...</p>
+                    </figure>
+                  </li>
+                </ul>
+                <ul class="spost_nav">
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/earthquake.html" class="media-left"> <img alt="" src="images/post_img1.png"> </a>
+                      <div class="media-body"> <a href="pages/earthquake.html" class="catg_title"> APEC-Taytay practices Earthquake Drill</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> APEC Schools- Taytay Strikes for Buwan ng Wika 2019</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img3.jpg"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> Lakan and Lakambini Triumph Happens for a Reason</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img4.png"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> CULTURAL BEAUTY...WITH A HEART</a> </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="technology">
+              <div class="single_post_content">
+                <h2><span>Articles again</span></h2>
+                <ul class="business_catgnav">
+                  <li>
+                    <figure class="bsbig_fig wow fadeInDown"> <a href="unreleased pages/index.html" class="featured_img"> <img alt="" src="images/featured_img3.jpg"> <span class="overlay"></span> </a>
+                      <figcaption> <a href="unreleased pages/index.html"></a> </figcaption>
+                      <p></p>
+                    </figure>
+                  </li>
+                </ul>
+                <ul class="spost_nav">
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/earthquake.html" class="media-left"> <img alt="" src="images/post_img1.png"> </a>
+                      <div class="media-body"> <a href="pages/earthquake.html" class="catg_title"> APEC-Taytay practices Earthquake Drill</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> APEC Schools- Taytay Strikes for Buwan ng Wika 2019</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img3.jpg"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> Lakan and Lakambini Triumph Happens for a Reason</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img4.png"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> CULTURAL BEAUTY...WITH A HEART</a> </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="single_post_content">
+            <h2><span>Photographs</span></h2>
+            <ul class="photograph_nav  wow fadeInDown">
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/DSC_0407.png" title="Photography Ttile 1"> <img src="images/DSC_0407.png" alt=""/></a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/DSC_0411.jpg" title="Photography Ttile 2"> <img src="images/DSC_0411.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/DSC_0415.jpg" title="Photography Ttile 3"> <img src="images/DSC_0415.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/DSC_0418.jpg" title="Photography Ttile 4"> <img src="images/DSC_0418.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/DSC_0420.jpg" title="Photography Ttile 5"> <img src="images/DSC_0420.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/DSC_0421.jpg" title="Photography Ttile 6"> <img src="images/DSC_0421.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="single_post_content">
+            <h2><span>Articles</span></h2>
+            <div class="single_post_content_left">
+              <ul class="business_catgnav">
+                <li>
+                  <figure class="bsbig_fig  wow fadeInDown"> <a class="featured_img" href="unreleased pages/index.html"> <img src="images/featured_img1.png" alt=""> <span class="overlay"></span> </a>
+                    <figcaption> <a href="unreleased pages/index.html">CULTURAL BEAUTY...WITH A HEART</a> </figcaption>
+                    <p></p>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <div class="single_post_content_right">
+              <ul class="spost_nav">
+                <li>
+                  <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img1.png"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> APEC-Taytay practices Earthquake Drill</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> APEC Schools- Taytay Strikes for Buwan ng Wika 2019</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img3.jpg"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> Lakan and Lakambini Triumph Happens for a Reason</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img4.png"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> CULTURAL BEAUTY...WITH A HEART</a> </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <aside class="right_content">
+          <div class="single_sidebar">
+            <h2><span>Popular Post</span></h2>
+            <ul class="spost_nav">
+              <li>
+                <div class="media wow fadeInDown"> <a href="pages/Earthquake.html" class="media-left"> <img alt="" src="images/post_img1.png"> </a>
+                      <div class="media-body"> <a href="pages/Earthquake.html" class="catg_title"> APEC-Taytay practices Earthquake Drill</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> APEC Schools- Taytay Strikes for Buwan ng Wika 2019</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img3.jpg"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> Lakan and Lakambini Triumph Happens for a Reason</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img4.png"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> CULTURAL BEAUTY...WITH A HEART</a> </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="single_sidebar">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#category" aria-controls="home" role="tab" data-toggle="tab">Category</a></li>
+              <li role="presentation"><a href="#video" aria-controls="profile" role="tab" data-toggle="tab">Video</a></li>
+              <li role="presentation"><a href="#comments" aria-controls="messages" role="tab" data-toggle="tab">Comments</a></li>
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="category">
+                <ul>
+                  <li class="cat-item"><a href="#">SportFest?</a></li>
+                  <li class="cat-item"><a href="#">APEC LEGENDS</a></li>
+                  <li class="cat-item"><a href="#">LifeLabs</a></li>
+                  <li class="cat-item"><a href="#">Calendar</a></li>
+                  <li class="cat-item"><a href="#">Events</a></li>
+                  <li class="cat-item"><a href="#">#IamApec</a></li>
+                  <li class="cat-item"><a href="#">Photographs</a></li>
+                </ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="video">
+                <div class="vide_area">
+                 <iframe width="100%" height="250" src="https://www.youtube.com/embed/C0afBgXjlJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="comments">
+                <ul class="spost_nav">
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="pages/Earthquake.html" class="media-left"> <img alt="" src="images/post_img1.png"> </a>
+                      <div class="media-body"> <a href="pages/earthquake.html" class="catg_title"> APEC-Taytay practices Earthquake Drill</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> APEC Schools- Taytay Strikes for Buwan ng Wika 2019</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img3.jpg"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> Lakan and Lakambini Triumph Happens for a Reason</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="unreleased pages/index.html" class="media-left"> <img alt="" src="images/post_img4.png"> </a>
+                      <div class="media-body"> <a href="unreleased pages/index.html" class="catg_title"> CULTURAL BEAUTY...WITH A HEART</a> </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="single_sidebar wow fadeInDown">
+            <h2><span>Sponsor</span></h2>
+            <a class="sideAdd" href="#"><img src="images/sponsor.PNG" alt=""></a> </div>
+          <div class="single_sidebar wow fadeInDown">
+            <h2><span>Category Archive</span></h2>
+            <select class="catgArchive">
+              <option>Select Category</option>
+              <option>APEC LEGENDS</option>
+              <option>August Issue</option>
+              <option>September issue</option>
+              <option>November Issue</option>
+            </select>
+          </div>
+          <div class="single_sidebar wow fadeInDown">
+            <h2><span>Links</span></h2>
+            <ul>
+              <li><a href="#">Apec Calendar</a></li>
+              <li><a href="#">Apec Legends Scoreboard</a></li>
+              <li><a href="#">School Schedule</a></li>
+              <li><a href="#">announcements</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="footer_top">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInLeftBig">
+            <h2>A P E C</h2>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInDown">
+            <h2>Tag</h2>
+            <ul class="tag_nav">
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Tell a story</a></li>
+              <li><a href="#">About APEC</a></li>
+              <li><a href="#">About this website</a></li>
+              <li><a href="#">Who are we?</a></li>
+              <li><a href="#">Credits</a></li>
+              <li><a href="#">Photo</a></li>
+              <li><a href="#">Slider</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInRightBig">
+            <h2>Contact</h2>
+            <p>AD</p>
+            <address>AD
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <p class="copyright">Copyright &copy; 2019 <a href="index.html">Amplify-Taytay</a></p>
+      <p class="developer">Developed By LNM</p>
+    </div>
+  </footer>
 </div>
-
-
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/wow.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/slick.min.js"></script> 
+<script src="assets/js/jquery.li-scroller.1.0.js"></script> 
+<script src="assets/js/jquery.newsTicker.min.js"></script> 
+<script src="assets/js/jquery.fancybox.pack.js"></script> 
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/darkmode.js"></script>
 </body>
 </html>
